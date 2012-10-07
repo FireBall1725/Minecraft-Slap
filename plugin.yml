@@ -1,0 +1,27 @@
+author: FireBall1725
+database: false
+description: Adds a slap command to bukkit
+generator: http://dinnerbone.com/minecraft/tools/pluginator/
+main: com.randrdevelopment.slap.Slap
+name: Slap
+startup: postworld
+url: http://www.randrdevelopment.com/
+version: '1.0'
+
+commands:
+  slap:
+    description: Slaps a user.
+    usage: /<command> <user> [message]
+    
+permissions:
+  slap.allowtoslap:
+    description: Allows the user to slap another user
+    default: op
+  
+  slap.bypassdamage:
+    description: Allows the user to bypass damage
+    default: op
+    
+  slap.bypasscooldown:
+    description: Allows the user to bypass the cooldown
+    default: op
